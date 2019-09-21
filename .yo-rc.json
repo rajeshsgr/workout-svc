@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.raj.nola.workout"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "microservice",
+    "baseName": "workoutsvc",
+    "packageName": "com.raj.nola.workout",
+    "packageFolder": "com/raj/nola/workout",
+    "serverPort": "8086",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2IxZmY5NzgwYmVkOWZkYzNjNDgzY2E5NTNkZjcwNjUzODdiYTA0NGE2NDZjNWY4MjA3OTlmMDBkYjQ4Yzk0MDQ4ZWQxODg4NTRiODQwMjBhY2U1ZTgzMzQxMGYxZjM5YzI3NDhhMGJlM2Y5NjBhNzg5MmQ3NzFkMDEyZmUyMzc=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
