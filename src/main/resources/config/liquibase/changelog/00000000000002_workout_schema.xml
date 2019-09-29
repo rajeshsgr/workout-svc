@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+                        
+                        
+    <changeSet author="raj" id="1">
+        <createTable tableName="workout">
+        
+            <column autoIncrement="true" name="workout_id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="workout_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column> 
+            
+            <column name="category_id" type="bigint">
+                <constraints nullable="false" 
+                foreignKeyName="fk_workout_category" 
+                references="workout(workout_id)"/>
+            </column> 
+                  
+        </createTable>
+        
+       
+    </changeSet>
+    
+</databaseChangeLog>
